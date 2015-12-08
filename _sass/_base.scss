@@ -1,0 +1,224 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    @include sans-serif-font;
+    font-size: 16px;
+    background-color: $theme-dark;
+}
+
+hr {
+    border-color: $theme-primary;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+hr.light {
+    border-color: white;
+}
+
+a {
+    // @include transition-all;
+    color: $theme-primary;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include sans-serif-font;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.bg-primary {
+    background-color: $theme-primary;
+}
+
+.bg-dark {
+    background-color: $theme-dark;
+    color: white;
+}
+
+.text-faded {
+    color: rgba(white, .7);
+}
+
+section {
+    padding: 100px 0;
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+// Homepage Header
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: auto;
+    // @include background-cover;
+    // background-position: center;
+    // background-image: url('../img/header.jpg');
+    // background-color: #D8D8D8;
+    text-align: center;
+    // color: black;
+    .header-content {
+        position: relative;
+        text-align: center;
+        padding: 100px 15px 100px;
+        // padding-top: 25%;
+        // padding-bottom: 25%;
+        width: 100%;
+        .header-content-inner {
+            h1 {
+                font-size: 2.3125em;
+                font-weight: 1000;
+                margin-top: 0;
+                margin-bottom: 1em;
+                color: white;
+            }
+            hr {
+                margin: 30px auto;
+            }
+            p.sub-tagline {
+                font-size: 1.33333em;
+                font-weight: 300;
+                margin-bottom:4em;
+            }
+            p.button-helper {
+                font-size: 1em;
+                font-weight: 100;
+                font-style: italic; 
+            }
+        }
+    }
+    // @media (min-width: 768px) {
+    //     min-height: 100%;
+    //     .header-content {
+    //         position: absolute;
+    //         top: 50%;
+    //         -webkit-transform: translateY(-50%);
+    //         -ms-transform: translateY(-50%);
+    //         transform: translateY(-50%);
+    //         padding: 0 50px;
+    //         .header-content-inner {
+    //             max-width: 1000px;
+    //             margin-left: auto;
+    //             margin-right: auto;
+    //             p {
+    //                 font-size: 18px;
+    //                 max-width: 80%;
+    //                 margin-left: auto;
+    //                 margin-right: auto;
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+// Sections
+
+// .section-heading {
+//     margin-top: 0;
+// }
+
+// .service-box {
+//     max-width: 400px;
+//     margin: 50px auto 0;
+//     @media (min-width: 992px) {
+//         margin: 20px auto 0;
+//     }
+//     p {
+//         margin-bottom: 0;
+//     }
+// }
+
+.call-to-action {
+    h2 {
+        margin: 0 auto 20px;
+    }
+}
+
+// Bootstrap Overrides
+.text-primary {
+    color: $theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+// Button Styles
+.btn-default {
+    @include button-variant($theme-dark, white, $theme-dark);
+}
+
+.btn-primary {
+    @include button-variant(white, $theme-primary, $theme-primary);
+}
+
+.btn {
+    @include sans-serif-font;
+    border: none;
+    font-size: 1.333333em;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+// Contact
+// #contact .fa {
+//     color: $theme-dark;
+//     font-size: 4em;
+// }
+
+// Extras
+// -- Highlight Color Customization
+// ::-moz-selection {
+//     color: white;
+//     text-shadow: none;
+//     background: $theme-dark;
+// }
+
+// ::selection {
+//     color: white;
+//     text-shadow: none;
+//     background: $theme-dark;
+// }
+
+// img::selection {
+//     color: white;
+//     background: transparent;
+// }
+
+// img::-moz-selection {
+//     color: white;
+//     background: transparent;
+// }
+
+// body {
+//     -webkit-tap-highlight-color: $theme-dark;
+// }
+
