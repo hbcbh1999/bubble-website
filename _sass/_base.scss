@@ -8,9 +8,9 @@ body {
     @include sans-serif-font;
     font-size: 16px;
     margin: 0;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    @include background-gradient($orange-light, $orange-dark);
+    // background-repeat: repeat;
+    // background-attachment: fixed;
+    // @include background-gradient($orange-dark, $orange-light);
 }
 
 hr {
