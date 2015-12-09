@@ -5,7 +5,7 @@
     transition: all 0.35s;
 }
 
-@mixin background-cov($first-color, $second-color)
+@mixin background-gradient($first-color, $second-color)
 {
   background: $second-color; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient($first-color, $second-color); /* For Safari 5.1 to 6.0 */
