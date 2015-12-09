@@ -8,6 +8,7 @@ body {
     @include sans-serif-font;
     font-size: 16px;
     margin: 0;
+    @include background-gradient($orange-light, $orange-dark);
 }
 
 hr {
@@ -75,7 +76,7 @@ header {
     width: 100%;
     height: 100%;
     min-height: auto;
-    @include background-gradient($orange-light, $orange-dark);
+    // @include background-gradient($orange-light, $orange-dark);
     text-align: center;
     .header-content {
         position: relative;
