@@ -106,46 +106,7 @@ header {
             }
         }
     }
-    // @media (min-width: 768px) {
-    //     min-height: 100%;
-    //     .header-content {
-    //         position: absolute;
-    //         top: 50%;
-    //         -webkit-transform: translateY(-50%);
-    //         -ms-transform: translateY(-50%);
-    //         transform: translateY(-50%);
-    //         padding: 0 50px;
-    //         .header-content-inner {
-    //             max-width: 1000px;
-    //             margin-left: auto;
-    //             margin-right: auto;
-    //             p {
-    //                 font-size: 18px;
-    //                 max-width: 80%;
-    //                 margin-left: auto;
-    //                 margin-right: auto;
-    //             }
-    //         }
-    //     }
-    // }
 }
-
-// Sections
-
-// .section-heading {
-//     margin-top: 0;
-// }
-
-// .service-box {
-//     max-width: 400px;
-//     margin: 50px auto 0;
-//     @media (min-width: 992px) {
-//         margin: 20px auto 0;
-//     }
-//     p {
-//         margin-bottom: 0;
-//     }
-// }
 
 .call-to-action {
     h2 {
@@ -181,38 +142,4 @@ header {
 .btn-xl {
     padding: 15px 30px;
 }
-
-// Contact
-// #contact .fa {
-//     color: $theme-dark;
-//     font-size: 4em;
-// }
-
-// Extras
-// -- Highlight Color Customization
-// ::-moz-selection {
-//     color: white;
-//     text-shadow: none;
-//     background: $theme-dark;
-// }
-
-// ::selection {
-//     color: white;
-//     text-shadow: none;
-//     background: $theme-dark;
-// }
-
-// img::selection {
-//     color: white;
-//     background: transparent;
-// }
-
-// img::-moz-selection {
-//     color: white;
-//     background: transparent;
-// }
-
-// body {
-//     -webkit-tap-highlight-color: $theme-dark;
-// }
 
