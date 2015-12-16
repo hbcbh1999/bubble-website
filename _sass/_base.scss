@@ -44,6 +44,15 @@ p {
     margin-bottom: 1.5em;
 }
 
+h1 {
+    font-size: 2.3125em;
+    // font-size: 3.12900721em;
+}
+
+h3 {
+    font-size: 1.3333333em;
+}
+
 .bg-primary {
     // background-color: $theme-primary;
 }
@@ -85,7 +94,6 @@ header {
         .header-content-inner {
             color: white;
             h1 {
-                font-size: 2.3125em;
                 font-weight: normal;
                 margin-top: 0;
                 margin-bottom: 1em;
@@ -152,8 +160,8 @@ header {
         display: block;
         margin: 0 auto;
     }
-    h2 {
-        font-weight: lighter;
+    h3 {
+        // font-weight: lighter;
     }
 }
 
