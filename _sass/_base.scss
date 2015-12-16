@@ -8,7 +8,7 @@ body {
     @include sans-serif-font;
     font-size: 16px;
     margin: 0;
-    @include background-gradient($orange-light, $orange-dark);
+    // @include background-gradient($orange-light, $orange-dark);
 }
 
 hr {
@@ -58,7 +58,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 aside {
@@ -72,24 +72,23 @@ aside {
 // Homepage Header
 
 header {
-    position: relative;
+    // position: relative;
     width: 100%;
-    height: 100%;
     min-height: auto;
-    // @include background-gradient($orange-light, $orange-dark);
+    @include background-gradient($orange-light, $orange-dark);
     text-align: center;
     .header-content {
-        position: relative;
+        // position: relative;
         text-align: center;
         padding: 20% 15px 20%;
-        width: 100%;
+        // width: 100%;
         .header-content-inner {
+            color: white;
             h1 {
                 font-size: 2.3125em;
                 font-weight: normal;
                 margin-top: 0;
                 margin-bottom: 1em;
-                color: white;
             }
             hr {
                 margin: 30px auto;
@@ -102,7 +101,7 @@ header {
             p.button-helper {
                 font-size: 1em;
                 font-weight: lighter;
-                font-style: italic; 
+                font-style: italic;
             }
         }
     }
@@ -141,4 +140,46 @@ header {
 
 .btn-xl {
     padding: 15px 30px;
+}
+
+/* Features */
+
+.features-row {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    h2 {
+        font-weight: lighter;
+    }
+}
+
+@media (min-width: 62em) {
+    .features-row {
+        text-align: left;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #D8D8D8;
+    text-align: center;
+    .links {
+        padding: 1em 0;
+        // display: inline;
+        margin: 0;
+        list-style: none;
+        li {
+            display: inline;
+            margin-left: 5px;
+            margin-right: 5px;
+            a {
+                padding: 5px 10px;
+            }
+        }
+    }
 }
