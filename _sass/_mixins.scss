@@ -8,11 +8,11 @@
 @mixin background-gradient($first-color, $second-color)
 {
   background: $second-color; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient($first-color, $second-color); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient($first-color, $second-color); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient($first-color, $second-color); /* For Firefox 3.6 to 15 */
-  background: linear-gradient($first-color, $second-color); /* Standard syntax */
-  background-attachment: fixed;
+  background-image: -webkit-linear-gradient($first-color, $second-color); /* For Safari 5.1 to 6.0 */
+  background-image: -o-linear-gradient($first-color, $second-color); /* For Opera 11.1 to 12.0 */
+  background-image: -moz-linear-gradient($first-color, $second-color); /* For Firefox 3.6 to 15 */
+  background-image: linear-gradient($first-color, $second-color); /* Standard syntax */
+  // background-attachment: fixed;
 }
 
 @mixin background-cover()
