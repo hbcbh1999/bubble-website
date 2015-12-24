@@ -2,8 +2,20 @@
 	<div class="container">
 		<div class="row">
 			<ul class="links">
-				<li><a href="/">Accueil</a></li>
-				<li><a href="/a-propos/">A propos</a></li>
+				<li>
+				{% if page.lang == "fr" %}
+					<a href="/">Accueil</a>
+				{% elsif page.lang == "en" %}
+					<a href="/en">Home</a>
+				{% endif %}
+				</li>
+				<li>
+				{% if page.lang == "fr" %}
+					<a href="/a-propos">A propos</a>
+				{% elsif page.lang == "en" %}
+					<a href="/about">About</a>
+				{% endif %}
+				</li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
