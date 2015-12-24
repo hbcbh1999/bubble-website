@@ -3,7 +3,7 @@ title: Bubble
 email:
 description: This is Bubble prod description
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.appbubble.co" # the base hostname & protocol for your site
+url: "http://www.appbubble.co/" # the base hostname & protocol for your site
 google_analytics: UA-71447316-1
 
 # Build settings
