@@ -1,10 +1,17 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Trouver de nouvelles BDs ne devrait pas être aussi compliqué</h1>
-            <p class="sub-tagline">Bubble aide les lecteurs de BDs à savoir ce qu’ils ont et à être informés des nouveautés.</p>
-            <a href="https://appbubble.typeform.com/to/aXWdPr" class="btn btn-primary btn-xl">Recevoir une invitation</a>
-            <p class="button-helper">Disponible sur invitation pour iPhone</p>
+	        {% if page.tagline %}
+	          <h1>{{ page.tagline }}</h1>
+	        {% endif %}
+	        {% if page.sub-tagline %}
+	        	<p class="sub-tagline">
+	        	{{ page.sub-tagline }}
+	          </p>
+	        {% endif %}
+	        {% if page.button %}
+	        {% include button.html %}
+	        {% endif %}
         </div>
     </div>
 </header>

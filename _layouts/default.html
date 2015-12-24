@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  {% if page.lang == "fr" %}
+	<html lang="fr">
+	{% elsif page.lang == "en" %}
+	<html lang="en">
+	{% else %}
+	<html>
+	{% endif %}
+
+{% include head.html %}
+
+<body id="page-top">
+	{% include header.html %}
+
+	{% if page.name == "index.html" or page.name == "index-en.md" %}
+		{% include features.html %}
+	{% endif %}
+	{% if page.page == "about" %}
+		{% include team.html %}
+	{% endif %}
+
+	<div class="container">
+	{{ content }}
+	</div>
+
+  <!-- {% include footer.html %} -->
+  {% include scripts.html %}
+</body>
+</html>
