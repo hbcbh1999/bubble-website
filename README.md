@@ -1,3 +1,3 @@
 # Bubble
 
-Wireframing for Bubble's website
+Bubble's website
