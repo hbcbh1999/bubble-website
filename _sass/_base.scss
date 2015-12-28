@@ -36,6 +36,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    margin-bottom: 1em;
 }
 
 p {
@@ -51,6 +52,10 @@ h1 {
 
 h3 {
     font-size: 1.3333333em;
+}
+
+#team h2 {
+    margin-bottom: 2em;
 }
 
 .bg-primary {
@@ -176,6 +181,10 @@ header {
 //         text-align: left;
 //     }
 // }
+
+#vision {
+    text-align: center;
+}
 
 /* Footer */
 

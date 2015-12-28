@@ -12,10 +12,11 @@
 <body id="page-top">
 	{% include header.html %}
 
-	{% if page.name == "index.html" or page.name == "index-en.md" %}
+	{% if page.page == "home" %}
 		{% include features.html %}
 	{% endif %}
 	{% if page.page == "about" %}
+		{% include vision.html %}
 		{% include team.html %}
 	{% endif %}
 
@@ -23,7 +24,7 @@
 	{{ content }}
 	</div>
 
-  <!-- {% include footer.html %} -->
+  {% include footer.html %}
   {% include scripts.html %}
 </body>
 </html>
