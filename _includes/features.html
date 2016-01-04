@@ -1,5 +1,17 @@
 <section id="features" class="container">
 	<div class="row">
+		<article id="collection" class="features-row col-md-12">
+			<img src="/img/collection.png" />
+			<div class="features-text">
+				<h3>
+				{% if page.lang == "fr" %}
+				Suivez facilement toutes vos séries complètes ET incomplètes
+				{% elsif page.lang == "en" %}
+				Track all your complete AND incomplete series easily
+				{% endif %}
+				</h3>
+			</div>
+		</article>
 		<article id="agenda" class="features-row col-md-12">
 			<img src="/img/agenda.png" />
 			<div class="features-text">
@@ -8,18 +20,6 @@
 				Ne ratez plus les sorties qui vous intéressent
 				{% elsif page.lang == "en" %}
 				Get notified when your new issues are out
-				{% endif %}
-				</h3>
-			</div>
-		</article>
-		<article id="collection" class="features-row col-md-12">
-			<img src="/img/collection.png" />
-			<div class="features-text">
-				<h3>
-				{% if page.lang == "fr" %}
-				Retrouvez facilement toutes vos séries complètes ET incomplètes
-				{% elsif page.lang == "en" %}
-				Track all your complete AND incomplete series easily
 				{% endif %}
 				</h3>
 			</div>
