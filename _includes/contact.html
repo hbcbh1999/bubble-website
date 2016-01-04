@@ -2,20 +2,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-<<<<<<< HEAD
                 <h2 class="section-heading">Nous contacter</h2>
                 <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-=======
-                <h2>Contact</h2>
-                <p>
-								{% if page.lang == "fr" %}
-									Copy for contact here
-								{% elsif page.lang == "en" %}
-									Copy for contact here
-								{% endif %}
-                </p>
->>>>>>> origin/master
+                
+					{% if page.lang == "fr" %}
+                        <p>
+                            <a href="mailto:contact@appbubble.co">contact@appbubble.co</a>
+                        </p>
+					{% elsif page.lang == "en" %}
+						Copy for contact here
+					{% endif %}
             </div>
         </div>
     </div>
