@@ -142,14 +142,35 @@ header {
 }
 
 .btn-primary {
-    @include button-variant($orange-dark, white, $green-primary);
+    @include button-variant(white, transparent, white);
+}
+
+.btn-icon {
+    // background: url('../img/apple-icon@2x.png') 15px center no-repeat;
+    // background-size: 35px 43px;
+    // padding: 18px 30px 15px 65px;
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > .dropdown-toggle & {
+        color: black;
+        color: $orange-dark;
+        // background: url('../img/apple-icon-hover@2x.png') 15px center no-repeat;
+        // background-size: 35px 43px;
+        // padding: 18px 30px 15px 65px;
+        background-color: white;
+        // background-color: darken($background, 5%);
+        // border-color: darken($border, 7%);
+    }
 }
 
 .btn {
     @include sans-serif-font;
-    border: none;
+    // border: none;
     font-size: 1.333333em;
-    box-shadow: 0px 1px 2px 2px rgba(black, 0.1);
+    // box-shadow: 0px 1px 2px 2px rgba(black, 0.1);
 }
 
 .btn-xl {
