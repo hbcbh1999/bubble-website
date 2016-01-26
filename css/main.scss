@@ -3,6 +3,9 @@
 
 @charset "utf-8";
 
+@import "_variables";
+@import "stylesheets/bootstrap";
+
 // Example Defaults
 // $base-font-family: Helvetica, Arial, sans-serif;
 // $base-font-size:   16px;
@@ -42,6 +45,6 @@ $green-primary: #10840E;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "mixins",
-        "base"
+  "mixins",
+  "base"
 ;
