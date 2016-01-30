@@ -1,7 +1,8 @@
 # Site settings
 title: Bubble
 email:
-description: This is Bubble prod description
+description: > # this means to ignore newlines until "baseurl:"
+  L'app des lecteurs de bande dessinées
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.appbubble.co/" # the base hostname & protocol for your site
 google_analytics: UA-71447316-1
