@@ -9,7 +9,3 @@ google_analytics: UA-71447316-1
 
 # Build settings
 markdown: kramdown
-
-# Facebook og
-facebook:
-  url: testURL
