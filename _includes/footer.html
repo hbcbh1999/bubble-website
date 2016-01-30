@@ -1,23 +1,24 @@
-<footer>
-	<div class="container">
+<footer class="site-footer">
+	<ul class="links">
+		<li>
+		{% if page.lang == "fr" %}
+			<a href="/">Accueil</a>
+		{% elsif page.lang == "en" %}
+			<a href="/en">Home</a>
+		{% endif %}
+		</li>
+		<li>
+		{% if page.lang == "fr" %}
+			<a href="/a-propos">Qui Sommes-Nous</a>
+		{% elsif page.lang == "en" %}
+			<a href="/about">About</a>
+		{% endif %}
+		</li>
+		<li><a href="https://medium.com/le-sélection-bubble-de-la-semaine">La Sélection de la semaine</a></li>
+	</ul>
+<!-- 	<div class="container">
 		<div class="row">
-			<ul class="links">
-				<li>
-				{% if page.lang == "fr" %}
-					<a href="/">Accueil</a>
-				{% elsif page.lang == "en" %}
-					<a href="/en">Home</a>
-				{% endif %}
-				</li>
-				<li>
-				{% if page.lang == "fr" %}
-					<a href="/a-propos">Qui Sommes-Nous</a>
-				{% elsif page.lang == "en" %}
-					<a href="/about">About</a>
-				{% endif %}
-				</li>
-				<li><a href="https://medium.com/le-sélection-bubble-de-la-semaine">La Sélection de la semaine</a></li>
-			</ul>
+
 		</div>
-	</div>
+	</div> -->
 </footer>
