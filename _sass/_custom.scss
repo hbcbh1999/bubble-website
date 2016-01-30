@@ -7,26 +7,6 @@
     @include button-variant($orange-dark, white, white);
 }
 
-// .btn-icon {
-//     // background: url('../img/apple-icon@2x.png') 15px center no-repeat;
-//     // background-size: 35px 43px;
-//     // padding: 18px 30px 15px 65px;
-//     &:hover,
-//     &:focus,
-//     &.focus,
-//     &:active,
-//     &.active,
-//     .open > .dropdown-toggle & {
-//         color: $orange-dark;
-//         // background: url('../img/apple-icon-hover@2x.png') 15px center no-repeat;
-//         // background-size: 35px 43px;
-//         // padding: 18px 30px 15px 65px;
-//         background-color: white;
-//         // background-color: darken($background, 5%);
-//         // border-color: darken($border, 7%);
-//     }
-// }
-
 .btn {
     @include sans-serif-font;
     // border: none;
@@ -61,12 +41,6 @@
       border-radius: 150px;
     }
 }
-
-// @media (min-width: 62em) {
-//     .features-row {
-//         text-align: left;
-//     }
-// }
 
 #vision {
     text-align: center;
