@@ -80,6 +80,37 @@ section {
     text-align: center;
 }
 
+ul.social-profiles {
+    list-style: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    line-height: 1.3em;
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    a {
+        display: block;
+        color: grey;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $orange-dark;
+    }
+    .fa-medium {
+        position: relative;
+        top: 2px;
+    }
+    .fa-twitter {
+        position: relative;
+        top: 1px;
+    }
+}
+
 /* Footer */
 
 .site-footer {
