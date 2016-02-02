@@ -1,3 +1,11 @@
+.site-header {
+    margin: 0 0 5.2em;
+}
+
+section {
+    padding: 1.3em 0;
+}
+
 // Button Styles
 .btn-default {
     @include button-variant($theme-dark, white, $theme-dark);
