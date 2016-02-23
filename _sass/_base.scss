@@ -135,3 +135,15 @@ header {
     padding-right:0;
     padding-left:0;
 }
+
+.mixpanel-badge-container {
+  display: table;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  background-color: #cdcdcd;
+}
+.mixpanel-badge {
+  display: table-cell;
+  vertical-align: middle;
+}
