@@ -147,3 +147,58 @@ header {
   display: table-cell;
   vertical-align: middle;
 }
+.about-page {
+  #missing-isbn {
+    display: none;
+  }
+  #manual-addition {
+    display: none;
+  }
+  #added-requested-EAN {
+    display: none;
+  }
+  #error-server {
+    display: none;
+  }
+  #found-in-our-database {
+    display: none;
+  }
+  #not-processed-yet {
+    display: none;
+  }
+  #has-been-rejected {
+    display: none;
+  }
+  .error {
+    margin: 20px 0;
+    color: red;
+  }
+  .mailto {
+    color: #FF5334;
+  }
+
+  h3 {
+    color: #FF5334;
+  }
+  .btn {
+    background-color: #FF5334;
+    color: white;
+    border: none;
+    &:hover {
+      background-color: #EA3818;
+      color: white;
+    }
+    &:active, &:focus {
+      background-color: #FF5334;
+      color: white;
+    }
+  }
+  .back-to-form {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .back-to-form-without-text {
+    display: inline-block;
+    margin: 20px 0;
+  }
+}
