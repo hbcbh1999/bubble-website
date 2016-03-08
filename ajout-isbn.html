@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{site.description}}">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c62f12">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#c62f12">
+
+    <title>
+    Demande d'ajout de DB
+    </title>
+    <meta property="og:url"                content="{{ site.url }}" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="{{ site.title }}" />
+    <meta property="og:description"        content="{{ site.description }}" />
+    <meta property="og:image"              content="{{ site.url}}img/bubble-facebook-og-image.jpg" />
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+  <div class="container about-page">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h1>Demande d'ajout de BD</h1>
+
+        <form id='add-form'>
+          <div class="form-group">
+            <label for="exampleInputText">Saisissez votre ISBN à 13 chiffres (Ex: 9782800117041)</label>
+            <input type="text" class="form-control" id="exampleInputText" placeholder="ISBN à 13 chiffres">
+          </div>
+          <button type="submit" class="btn btn-default">Envoyer</button>
+          <div class="error"></div>
+        </form>
+
+        <div id="manual-addition">
+          <h3>Nous n'avons pas trouvé cet EAN: <span class='ref-EAN'></span>.</h3>
+          <div>
+            Vous pouvez nous demander de l'ajouter par email en cliquant sur <a class="mailto" href=''>demande d'ajout par email</a>. Comme nous n'avons trouver aucune information sur cet EAN: <span class='ref-EAN'></span> dans toutes nos base partenaires, nous aimerions que vous ajoutiez a ce mail des éléments le maximum d'information possible et notamment un photo de la couverture. Merci
+          </div>
+          <a href="#" class="back-to-form">
+            Revenir au formulaire
+          </a>
+        </div>
+
+        <div id="error-server">
+          <h3>Une erreur nous a empéché de traiter votre EAN: <span class='ref-EAN'></span>.</h3>
+          <div>
+            N'hésitez pas à resoumettre votre EAN: <span class='ref-EAN'></span>. Merci
+          </div>
+          <a href="#" class="back-to-form">
+            Revenir au formulaire
+          </a>
+        </div>
+
+        <div id="missing-isbn">
+          <h3>Vous n'avez pas saisi d'EAN.</h3>
+          <div>
+            Vous pouvez nous demander de l'ajouter par email en cliquant ici (Demande d'ajout par email). Comme nous n'avons trouver aucune information sur cet EAN: <span class='ref-EAN'></span> dans toutes nos base partenaires, nous aimerions que vous ajoutiez a ce mail des éléments le maximum d'information possible et notamment un photo de la couverture. Merci
+          </div>
+          <a href="#" class="back-to-form">
+            Revenir au formulaire
+          </a>
+        </div>
+
+        <div id="found-in-our-database">
+          <h3>Cet EAN: <span class='ref-EAN'></span> existe déjà dans notre base de données.</h3>
+          <div>
+            Nous vous conseillons de reitérer votre recherche dans l'application. Merci
+          </div>
+          <a href="#" class="back-to-form-without-text">
+            Revenir au formulaire
+          </a>
+        </div>
+
+        <div id="not-processed-yet">
+          <h3>Cet EAN: <span class='ref-EAN'></span> est en cours de traitement.</h3>
+          <div>
+            Nous sommes en train d'analyser cet EAN: <span class='ref-EAN'></span> pour déterminer si nous devons l'ajouter à notre base de données. Ce traitement peut durer jusqu'à 48h après sa date d'ajout. Merci
+          </div>
+          <a href="#" class="back-to-form-without-text">
+            Revenir au formulaire
+          </a>
+        </div>
+
+        <div id="has-been-rejected">
+          <h3>Cet EAN: <span class='ref-EAN'></span> ne sera pas ajouté dans notre base de données.</h3>
+          <div>
+            Après avoir étudier avec attention cet EAN: <span class='ref-EAN'></span>, nous avons décidé ne pas l'ajouter à notre base de données. Nous espérons que vous comprenez cette décicion. Merci
+          </div>
+          <a href="#" class="back-to-form-without-text">
+            Revenir au formulaire
+          </a>
+        </div>
+
+        <div id="added-requested-EAN">
+          <h3>Nous avons enregistré votre demande d'ajout pour l'EAN: <span class='ref-EAN'></span>.</h3>
+          <div>
+            Nous allon traité cette demande dans les 48h.
+          </div>
+          <a href="#" class="back-to-form-without-text">
+            Revenir au formulaire
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
