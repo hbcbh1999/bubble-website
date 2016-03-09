@@ -169,9 +169,16 @@ header {
   #has-been-rejected {
     display: none;
   }
-  .error {
+  .message-container {
     margin: 20px 0;
-    color: red;
+  }
+  .error-container {
+    display: none;
+    color: #a94442;
+  }
+  .validation-container {
+    display: none;
+    color: #3c763d;
   }
   .mailto {
     color: #FF5334;
