@@ -62,10 +62,19 @@
         <form id='add-form'>
           <div class="form-group">
             <label for="exampleInputText">Saisissez votre ISBN à 13 chiffres (Ex: 9782800117041)</label>
-            <input type="text" class="form-control" id="exampleInputText" placeholder="ISBN à 13 chiffres">
+            <input type="text" class="form-control input-lg" id="exampleInputText" placeholder="ISBN à 13 chiffres">
+
+            <div class="validation-container message-container">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              <span class="validation">Votre EAN est valide</span>
+            </div>
+
+            <div class="error-container message-container">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              <span class="error"></span>
+            </div>
           </div>
           <button type="submit" class="btn btn-default">Envoyer</button>
-          <div class="error"></div>
         </form>
 
         <div id="manual-addition">
@@ -82,16 +91,6 @@
           <h3>Une erreur nous a empéché de traiter votre EAN: <span class='ref-EAN'></span>.</h3>
           <div>
             N'hésitez pas à resoumettre votre EAN: <span class='ref-EAN'></span>. Merci
-          </div>
-          <a href="#" class="back-to-form">
-            Revenir au formulaire
-          </a>
-        </div>
-
-        <div id="missing-isbn">
-          <h3>Vous n'avez pas saisi d'EAN.</h3>
-          <div>
-            Vous pouvez nous demander de l'ajouter par email en cliquant ici (Demande d'ajout par email). Comme nous n'avons trouver aucune information sur cet EAN: <span class='ref-EAN'></span> dans toutes nos base partenaires, nous aimerions que vous ajoutiez a ce mail des éléments le maximum d'information possible et notamment un photo de la couverture. Merci
           </div>
           <a href="#" class="back-to-form">
             Revenir au formulaire
